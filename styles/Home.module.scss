@@ -1,0 +1,85 @@
+@keyframes flechita {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: -10%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes ripple {
+  0% {
+    background-color: transparent;
+  }
+  30% {
+    background-color: var(--cell-color);
+  }
+  60% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.stronger {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  overflow: hidden;
+  h1 {
+	  margin-bottom: -10vh;
+    font-size: 3.5rem;
+    position: relative;
+    font-family: "Gugi", cursive;
+    color: #fff;
+    background: #ccc;
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transform: rotate(5deg);
+  }
+  .bottom {
+    .flechita {
+      width: 100%;
+      height: 5vh;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      svg {
+        position: absolute;
+        font-size: 5vh;
+        transform: rotate(90deg);
+        animation: flechita 0.7s linear infinite;
+      }
+    }
+  }
+}
+.bottom {
+  position: absolute;
+  font-family: "The Girl Next Door", cursive;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Life Savers", cursive;
+}
+.loader {
+  h3 {
+    text-align: center;
+    font-weight: 100;
+    font-family: "Lato", sans-serif;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+  }
+}
