@@ -1,4 +1,4 @@
 module.exports = {
     basePath: '/mywebpage',
-    assetPrefix: '/mywebpage',
+    assetPrefix: 'http://eltito.github.io/mywebpage'
 }
