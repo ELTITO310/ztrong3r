@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://eltito310.github.io/mywebpage",
+  "engines": {
+    "node": "12.20x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
