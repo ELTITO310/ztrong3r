@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -P $PORT",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
     "export": "next export",
     "deploy": "gh-pages -d out",
     "lint": "next lint"
